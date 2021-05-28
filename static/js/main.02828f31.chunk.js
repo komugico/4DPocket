@@ -1,0 +1,2 @@
+(this.webpackJsonppocket=this.webpackJsonppocket||[]).push([[0],{12:function(e,t,c){"use strict";c.r(t);var n=c(0),o=c.n(n),s=c(9),a=c.n(s),p=c(11),r=c(5);a.a.render(Object(r.jsx)(o.a.StrictMode,{children:Object(r.jsx)(p.a,{basename:"/4dpocket"})}),document.getElementById("root"))}},[[12,1,2]]]);
+//# sourceMappingURL=main.02828f31.chunk.js.map
