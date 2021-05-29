@@ -1,6 +1,6 @@
 import React from 'react';
 import { Route } from "react-router-dom";
-import HeaderModule from '../shared/components/HeaderModule';
+import HeaderModule from '../shared/components/modules/HeaderModule';
 
 class DBTestRouter extends React.Component {
     constructor(props) {
