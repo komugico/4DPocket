@@ -21,35 +21,40 @@ class DBTestRouter extends React.Component {
         );
     }
 
-    componentDidMount() {
-        this.props.db.collection('test').get().then((snapshot) => {
-            let tmp_messages = [];
-            snapshot.forEach((doc) => {
-                console.log(doc.data().message);
-                tmp_messages.push(
-                    <tr>
-                        <td style={{ border: 'solid 1px' }}>
-                            <p>{doc.id}</p>
-                        </td>
-                        <td style={{ border: 'solid 1px' }}>
-                            <p>{doc.data().message}</p>
-                        </td>
-                    </tr>
-                );
+    updateMessage = async () => {
+        let tmp_messages = [];
+        try {
+            await this.props.db.collection('test').get().then((snapshot) => {
+                snapshot.forEach((doc) => {
+                    tmp_messages.push(
+                        <tr>
+                            <td style={{ border: 'solid 1px' }}>
+                                <p>{doc.id}</p>
+                            </td>
+                            <td style={{ border: 'solid 1px' }}>
+                                <p>{doc.data().message}</p>
+                            </td>
+                        </tr>
+                    );
+                });
             });
-            this.setState({
-                messages: tmp_messages,
-            });
+        }
+        catch (error) {
+            alert(error.message);
+        } 
+        this.setState({
+            messages: tmp_messages,
         });
     }
-
+    
     render() {
         return (
             <div>
                 <Route exact path="/dbtest">
                     <HeaderModule />
                     < br />
-                    { this.messagesTable() }
+                    <button onClick={() => this.updateMessage()}>Update</button>
+                    {this.messagesTable()}
                 </Route>
             </div>
         )
