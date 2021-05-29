@@ -1,5 +1,6 @@
 import React from 'react';
 import { Route } from "react-router-dom";
+import HeaderModule from '../shared/components/HeaderModule';
 
 class DBTestRouter extends React.Component {
     constructor(props) {
@@ -46,6 +47,8 @@ class DBTestRouter extends React.Component {
         return (
             <div>
                 <Route exact path="/dbtest">
+                    <HeaderModule />
+                    < br />
                     { this.messagesTable() }
                 </Route>
             </div>
