@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.js": "/4dpocket/static/js/main.2eb95acc.chunk.js",
-    "main.js.map": "/4dpocket/static/js/main.2eb95acc.chunk.js.map",
-    "runtime-main.js": "/4dpocket/static/js/runtime-main.8de52246.js",
-    "runtime-main.js.map": "/4dpocket/static/js/runtime-main.8de52246.js.map",
-    "static/js/2.31175e02.chunk.js": "/4dpocket/static/js/2.31175e02.chunk.js",
-    "static/js/2.31175e02.chunk.js.map": "/4dpocket/static/js/2.31175e02.chunk.js.map",
-    "index.html": "/4dpocket/index.html",
-    "static/js/2.31175e02.chunk.js.LICENSE.txt": "/4dpocket/static/js/2.31175e02.chunk.js.LICENSE.txt"
+    "main.js": "/4DPocket/static/js/main.aa80f70a.chunk.js",
+    "main.js.map": "/4DPocket/static/js/main.aa80f70a.chunk.js.map",
+    "runtime-main.js": "/4DPocket/static/js/runtime-main.a22ea86b.js",
+    "runtime-main.js.map": "/4DPocket/static/js/runtime-main.a22ea86b.js.map",
+    "static/js/2.537f4476.chunk.js": "/4DPocket/static/js/2.537f4476.chunk.js",
+    "static/js/2.537f4476.chunk.js.map": "/4DPocket/static/js/2.537f4476.chunk.js.map",
+    "index.html": "/4DPocket/index.html",
+    "static/js/2.537f4476.chunk.js.LICENSE.txt": "/4DPocket/static/js/2.537f4476.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.8de52246.js",
-    "static/js/2.31175e02.chunk.js",
-    "static/js/main.2eb95acc.chunk.js"
+    "static/js/runtime-main.a22ea86b.js",
+    "static/js/2.537f4476.chunk.js",
+    "static/js/main.aa80f70a.chunk.js"
   ]
 }
