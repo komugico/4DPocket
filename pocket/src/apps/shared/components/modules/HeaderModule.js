@@ -33,6 +33,19 @@ class HeaderModule extends React.Component {
                     <div>
                         <p>{this.state.user.email}</p>
                         <p>{this.state.user.uid}</p>
+                        <LinkContainer to="/auth/logout">
+                            <Nav.Link href="/">Log out</Nav.Link>
+                        </LinkContainer>
+                    </div>
+                }
+                {!this.state.user &&
+                    <div>
+                        <LinkContainer to="/auth/login">
+                            <Nav.Link href="/">Log in</Nav.Link>
+                        </LinkContainer>
+                        <LinkContainer to="/auth/signup">
+                            <Nav.Link href="/">Sign up</Nav.Link>
+                        </LinkContainer>
                     </div>
                 }
             </Navbar>
